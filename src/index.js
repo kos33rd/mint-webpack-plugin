@@ -12,11 +12,11 @@ const getProjectFiles = (dir, mask) => {
 
 function getRecursiveFileDependencies(module, parsedModules, dir) {
     let deps = []
-    if (parsedModules.indexOf(module.id) != -1) {
+    if (parsedModules.indexOf(module.id) !== -1) {
         return deps
     }
 
-    if (module.resource && module.resource.indexOf(dir) == -1){
+    if (module.resource && module.resource.indexOf(dir) === -1){
         return deps
     }
 
@@ -55,7 +55,7 @@ MintPlugin.prototype.apply = function(compiler) {
 
             const unusedFiles = _.difference(projectFiles, _.uniq(dependentFiles))
             if(!_.isEmpty(unusedFiles)){
-                console.log(colors.green('[Mint] Found unused files:'))
+                console.log('[Mint] Found unused files:')
                 _.map(unusedFiles, (f)=>{
                     console.log(`\t* ${f}`)
                 })
