@@ -1,0 +1,19 @@
+{
+  "name": "mint-webpack-plugin",
+  "description": "Module-level linter for webpack",
+  "version": "0.0.0a",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Eat shit and die\" && exit 1"
+  },
+  "peerDependencies": {
+    "webpack": "^3 || ^2 || ^2.2.0-rc.0 || ^2.1.0-beta.0 || ^1.13.2"
+  },
+  "dependencies": {
+    "debug": "^3.0.1",
+    "globby": "^6.1.0",
+    "lodash": "~4.17.4"
+  },
+  "author": "Lobov Konstantin",
+  "license": "WTFPL"
+}
