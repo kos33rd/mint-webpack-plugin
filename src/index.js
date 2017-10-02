@@ -42,6 +42,8 @@ MintPlugin.prototype.apply = function (compiler) {
                 isExternal = ext.test(webpackedPath)
             } else if (typeof ext === 'function') {
                 isExternal = ext(null, webpackedPath, (c, v) => v)
+            } else if (_.isObject(ext)) {
+                isExternal = _.includes(_.keys(ext), webpackedPath)
             }
             debug(`${webpackedPath} is treated as ${isExternal ? 'external' : 'internal'}`)
             return isExternal
