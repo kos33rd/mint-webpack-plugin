@@ -1,7 +1,7 @@
 {
   "name": "mint-webpack-plugin",
   "description": "Module-level linter for webpack",
-  "version": "0.0.0a",
+  "version": "0.0.1a",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Eat shit and die\" && exit 1"
