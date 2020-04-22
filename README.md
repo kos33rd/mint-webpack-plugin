@@ -30,3 +30,7 @@ At the moment there is only one linting option - search for unused files in your
 The plugin will dump report every time you build your project.
 
 
+
+---
+
+Here is [a short presentation](https://docs.google.com/presentation/d/1aUyP524HYkrczFs0Goa4BjsKIaMovMqISRsLidUYmKs/edit?usp=sharing) on this plugin idea (in russian)
